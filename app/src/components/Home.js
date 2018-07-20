@@ -1,12 +1,11 @@
 import React from 'react';
 
+import Hero from './Hero';
+
 const Home = () => (
-  <section className="section">
-    <div className="container">
-      <h1 className="title has-text-primary">Hello World!</h1>
-      <h2 className="subtitle">What is it you are building ?</h2>
-    </div>
-  </section>
+  <div className="container-fluid">
+    <Hero />
+  </div>
 );
 
 export default Home;
