@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '../../../node_modules/@fortawesome/react-fontawesome';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import { Element } from 'react-scroll';
 
 class Skills extends Component {
   render() {
     const { skills } = this.props;
     return (
-      <ScrollableAnchor id={'skills-anchor'}>
+      <Element name="skills" className="element">
         <section className="section" id="skills">
           <h2 className="title">Skills</h2>
           <h3 className="subtitle">Some technologies I master and work with most of the time.</h3>
@@ -20,7 +20,7 @@ class Skills extends Component {
             ))}
           </div>
         </section>
-      </ScrollableAnchor>
+      </Element>
     );
   }
 }

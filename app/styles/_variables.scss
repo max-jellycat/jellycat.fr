@@ -1,16 +1,9 @@
 @import '../../node_modules/bulma/sass/utilities/initial-variables';
 @import '../../node_modules/bulma/sass/utilities/functions';
 
-$family-sans-serif: 'Montserrat', sans-serif;
+$family-sans-serif: ('Montserrat', sans-serif);
 
 $family-primary: $family-sans-serif;
 
 @import '../../node_modules/bulma/sass/utilities/derived-variables';
-
-$breakpoints : (
-  phone: 640px,
-  tablet: 768px,
-  desktop: 1024px,
-  large: 1100px
-)
 

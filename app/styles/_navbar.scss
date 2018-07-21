@@ -5,6 +5,12 @@
     height: 80px
   }
 
+  &-brand {
+    .navbar-item.active {
+      background-color: $dark;
+    }
+  }
+
   &-burger {
     color: $primary;
     font-weight: bold;
@@ -15,11 +21,16 @@
   }
 
   &-item {
-    font-family: 'Montserrat';
+    font-family: $family-primary;
     text-transform: uppercase;
     font-weight: bold;
     .button {
       text-transform: capitalize;
+    }
+
+    &.active {
+      background-color: #292929;
+      color: $primary !important;
     }
   }
 
@@ -53,7 +64,7 @@
 
   &-end {
     font-size: 2em;
-    
+
     .icon {
       padding: 0 .5em;
       color: $primary;

@@ -7,6 +7,7 @@ import { startLoading } from './actions/actions';
 
 import Home from './components/Home';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 store.dispatch(startLoading());
 
@@ -18,6 +19,7 @@ const App = () => (
         <Switch>
           <Route path="/" component={Home} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   </Provider>
