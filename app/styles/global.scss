@@ -1,6 +1,10 @@
 @import 'variables';
 @import '../../node_modules/bulma/bulma';
 
+@import 'navbar';
+@import 'hero';
+@import 'skills';
+
 html {
   font-family: 'Montserrat';
   color: $dark;
@@ -16,89 +20,4 @@ h1, h2, h3 {
   font-weight: bold;
   text-transform: capitalize;
   font-family: 'Montserrat';
-}
-
-.navbar {
-  background-color: transparent;
-  height: 80px;
-
-  &-burger {
-    span {
-      background-color: $dark;
-    }
-  }
-  &-item {
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    font-weight: bold;
-
-    .button {
-      text-transform: capitalize;
-    }
-  }
-}
-
-#hero {
-  background: url('../src/img/wall.jpg');
-  background-size: cover;
-  background-color: rgba(35, 35, 35, .6);
-  background-blend-mode: overlay;
-  background-position-y: bottom;
-  text-align: left;
-  padding: 10em 0 5em;
-  color: $light;
-
-  &-text {
-    padding: 2em 4em 0;
-  }
-
-  hr {
-    background-color: $dark;
-    height: 1px;
-  }
-
-  .title {
-    font-size: 3em;
-    color: $light;
-    padding: .5em 0;
-  }
-
-  .subtitle {
-    font-size: 2em;
-    text-transform: uppercase;
-    color: $light;
-  }
-
-  .box {
-    background-color: rgba(35, 35, 35, .6);
-
-    h3 {
-      color: $primary;
-      font-weight: bold;
-      font-size: 1.3em;
-      padding-bottom: .5rem;
-    }
-
-    .field {
-      padding: .5em 0;
-
-      .input, .textarea {
-        padding: 1.5em 1em;
-        background-color: rgba(255 ,255 ,255, .8);
-
-        &::placeholder {
-          color: $dark;
-        }
-
-        &:focus {
-          border-color: $primary;
-          box-shadow:  0 0 0 .125em rgba(0, 217, 182, .3)
-        }
-      }
-
-      .textarea {
-        padding: 1em;
-      }
-    }
-  }
 }

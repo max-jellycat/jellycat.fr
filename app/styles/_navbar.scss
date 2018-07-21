@@ -1,0 +1,27 @@
+.navbar {
+  background-color: transparent;
+  height: 80px;
+
+  &-burger {
+    span {
+      background-color: $dark;
+    }
+  }
+  &-item {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: bold;
+    .button {
+      text-transform: capitalize;
+    }
+  }
+
+  &-end {
+    font-size: 2em;
+    
+    .icon {
+      padding: 0 .5em;
+      color: $primary;
+    }
+  }
+}

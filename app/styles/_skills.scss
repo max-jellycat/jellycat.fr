@@ -1,0 +1,31 @@
+#skills {
+  background-color: $primary;
+  text-align: center;
+
+  .title {
+    text-transform: uppercase;
+  }
+
+  .skills {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 1em;
+  }
+
+  .skill {
+    text-align: center;
+    width: 25%;
+    margin-bottom: 2em;
+
+    &-icon {
+      font-size: 6em;
+    }
+
+    &-title {
+      font-size: 2em;
+      font-weight: bold;
+    }
+  }
+}
