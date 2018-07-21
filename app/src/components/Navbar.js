@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import JellycatDark from '../img/logo-jellycat-darkbg.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { removeHash } from 'react-scrollable-anchor';
 
 class Navbar extends Component {
   render() {
@@ -11,7 +12,7 @@ class Navbar extends Component {
       <nav className="navbar is-dark is-fixed-top">
         <div className="container">
           <div className="navbar-brand">
-            <a className="navbar-item">
+            <a href="#hero-anchor" className="navbar-item" onClick={() => removeHash()}>
               <img src={JellycatDark} alt="Logo Jellycat Studio"/>
             </a>
             <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -22,7 +23,7 @@ class Navbar extends Component {
           </div>
           <div className="navbar-menu">
             <div className="navbar-start">
-              <a href="#" className="navbar-item">Skills</a>
+              <a href="#skills-anchor" className="navbar-item" onClick={() => removeHash()}>Skills</a>
               <a href="#" className="navbar-item">Projects</a>
             </div>
             <div className="navbar-end">
