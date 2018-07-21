@@ -6,14 +6,14 @@ const Hero = () => (
   <ScrollableAnchor id={'hero-anchor'}>
     <div className="hero" id="hero">
       <div className="container">
-        <div className="columns">
-          <div className="column is-two-thirds" id="hero-text">
+        <div className="columns is-desktop">
+          <div className="column is-7-desktop" id="hero-text">
             <img className="hero-logo" src={JellycatLogo} alt=""/>
             <h1 className="title">Need help in web development?</h1>
             <h2 className="subtitle">Fitted for every challenge, Jellycat always falls on his paws !</h2>
           </div>
 
-          <div className="column is-one-third">
+          <div className="column is-4-desktop is-offset-1-desktop">
             <div className="box">
               <h3>Need help ? Leave me a message !</h3>
               <form className="form">

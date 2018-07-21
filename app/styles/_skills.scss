@@ -9,7 +9,7 @@
     font-size: 3em;
     margin-bottom: 1em;
   }
-  
+
   .subtitle {
     font-size: 1.5em;
   }
@@ -26,6 +26,14 @@
     text-align: center;
     width: 25%;
     margin-bottom: 2em;
+
+    @include touch {
+      width: 50%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
 
     &-icon {
       font-size: 6em;

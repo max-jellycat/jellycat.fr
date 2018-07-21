@@ -1,18 +1,53 @@
 .navbar {
   background-color: transparent;
-  height: 80px;
+
+  @include desktop {
+    height: 80px
+  }
 
   &-burger {
-    span {
-      background-color: $dark;
+    color: $primary;
+    font-weight: bold;
+
+    &:hover {
+      color: $light;
     }
   }
+
   &-item {
     font-family: 'Montserrat';
     text-transform: uppercase;
     font-weight: bold;
     .button {
       text-transform: capitalize;
+    }
+  }
+
+  &-menu.is-active {
+    background-color: $dark;
+
+    .navbar-start {
+      .navbar-item {
+        color: $light;
+        &:hover {
+          background-color: $primary;
+          color: $dark;
+        }
+      }
+    }
+
+    .navbar-end {
+      display: flex;
+
+      .navbar-item {
+        &:hover {
+          background-color: $dark;
+
+          .icon {
+            color: $light;
+          }
+        }
+      }
     }
   }
 
